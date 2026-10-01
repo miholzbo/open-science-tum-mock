@@ -34,51 +34,43 @@ literature and data to software and methods.
 
 <!-- Layout variant A: everything below this line differs between the variants -->
 
-## Central Aspects of Open Science
+## Related Policies and Regulations
 
-<div class="grid cards" markdown>
+- [Open Access Policy](https://www.ub.tum.de/open-access)
+- [Berlin Declaration](https://openaccess.mpg.de/Berliner-Erklaerung), signed by TUM
+- [Declaration of Research Assessment (DORA)](https://www.ub.tum.de/en/dora)
+- [TUM Guidelines on Handling Research Data](https://web.tum.de/en/researchdata/tum-guidelines/)
+- [TUM AI Strategy](https://mediatum.ub.tum.de/1766631)
+- TUM Data Strategy (link to follow)
 
--   **Open Access**
+## Open Science Services at TUM
 
-    ---
+### How to publish …
 
-    Unrestricted access to scientific literature — reading it and publishing it.
+| … | Support |
+| --- | --- |
+| **articles?** | The Open Access team of the University Library assists you with various possibilities for publishing open-access articles: [Open Access Services](https://www.ub.tum.de/open-access), [open-access@ub.tum.de](mailto:open-access@ub.tum.de) |
+| **books?** | You can publish books in both print and online formats with TUM’s open-access publisher TUM.University Press: [TUM.University Press](https://www.ub.tum.de/tumuniversitypress), [tumuniversitypress@tum.de](mailto:tumuniversitypress@tum.de) |
+| **research data?** | We recommend publishing research data in a data repository, e.g., in the institutional repository [mediaTUM](https://mediatum.ub.tum.de/?change_language=en) or other suitable discipline-specific or interdisciplinary repositories: [TUM Research Data Hub](https://web.tum.de/en/researchdata/support-information/publish-share-data/), [researchdata@tum.de](mailto:researchdata@tum.de) |
+| **research software?** | Research software can be published in dedicated software repositories, like [GitHub](https://github.com/) or [GitLab](https://gitlab.lrz.de/). For assistance, please contact: [TUM Research Data Hub](https://web.tum.de/en/researchdata/support-information/publish-share-data/), [researchdata@tum.de](mailto:researchdata@tum.de) |
+| **any other media?** | The institutional repository mediaTUM supports the publication of multimedia content in research and teaching: [mediaTUM](https://mediatum.ub.tum.de/?change_language=en), [mediatum@ub.tum.de](mailto:mediatum@ub.tum.de) |
 
-    [About Open Access](#){ .tum-more }
+### How to document …
 
--   **Open Data**
+| … | Support |
+| --- | --- |
+| **research processes?**<br>**research data?**<br>**software?**<br>**hardware?**<br>**workflows?** | The TUM Research Data Hub offers guidance and infrastructure solutions for documenting research methods and outputs in a standardized and efficient way: [TUM Research Data Hub](https://web.tum.de/en/researchdata/support-information/publish-share-data/), [researchdata@tum.de](mailto:researchdata@tum.de) |
 
-    ---
+### How to choose suitable …
 
-    Planning, documenting, storing and publishing research data along the FAIR principles.
-
-    [About Research Data Management](#){ .tum-more }
-
--   **Open Source**
-
-    ---
-
-    Publishing research software under an open licence, with a citable release.
-
-    [About Open Source & Software](#){ .tum-more }
-
--   **Open Methodology**
-
-    ---
-
-    Making results verifiable: environments, workflows, protocols and preregistration.
-
-    [About Reproducibility](#){ .tum-more }
-
-</div>
-
-## Where to start
-
-Placeholder paragraph describing the typical entry points for researchers, doctoral candidates
-and support staff.
-
-[Infrastructure at TUM](#){ .md-button .md-button--primary }
-[Support & Contact](#){ .md-button }
+| … | Support |
+| --- | --- |
+| **journals?** | The university library offers practical tips for journal selection, funding options, and avoiding predatory journals: [Open Access Services](https://www.ub.tum.de/open-access), [open-access@ub.tum.de](mailto:open-access@ub.tum.de) |
+| **licences?** | This [guidance](https://mediatum.ub.tum.de/1711141) and several courses on publishing and research data management offer help selecting suitable licenses: [Open Access Services](https://www.ub.tum.de/open-access), [TUM Research Data Hub](https://web.tum.de/en/researchdata/support-information/publish-share-data/) |
+| **data repositories?** | You can choose the institutional repository [mediaTUM](https://mediatum.ub.tum.de/?change_language=en) or search for discipline-specific repositories via the registry [re3data.org](https://www.re3data.org/): [TUM Research Data Hub](https://web.tum.de/en/researchdata/support-information/publish-share-data/), [researchdata@tum.de](mailto:researchdata@tum.de) |
+| **documentation tools?** | TUM offers the open source tools [TUM eLabFTW](https://www.ub.tum.de/en/elabftw) and [TUM DataTagger](https://www.ub.tum.de/en/datatagger) for documenting research processes and research data: [TUM Research Data Hub](https://web.tum.de/en/researchdata/infrastructure/tools-storage-solutions/), [researchdata@tum.de](mailto:researchdata@tum.de) |
+| **metadata standards?** | Use generic or discipline-specific metadata to describe your data: [TUM Data Knowledge Hub](https://tum-research-data-hub.github.io/knowledge-hub/general-knowledge/metadata), [researchdata@tum.de](mailto:researchdata@tum.de) |
+| **data formats?** | Where possible, use open, widely used, and simple data formats to enhance accessibility. For assistance, please contact: [TUM Research Data Hub](https://web.tum.de/en/researchdata/support-information/archive-data/), [researchdata@tum.de](mailto:researchdata@tum.de) |
 
 !!! tip "Support"
 
