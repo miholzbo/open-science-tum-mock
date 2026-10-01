@@ -81,4 +81,4 @@ and support staff.
 !!! tip "Support"
 
     If you have any questions about Open Science at TUM, please feel free to contact us:
-    [open-science@tum.de](mailto:open-science@tum.de)
+    [researchdata@tum.de](mailto:researchdata@tum.de)
