@@ -702,3 +702,68 @@
 [data-md-color-scheme="slate"] .md-typeset .admonition.tip > .admonition-title {
   color: var(--tum-primary);
 }
+
+/* ==========================================================================
+   Service cards ("How to publish / document / choose …")
+   ========================================================================== */
+
+.md-typeset .grid.cards.tum-services > ul > li {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Icon + question as card title */
+.md-typeset .tum-services > ul > li > p:first-child {
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  margin-top: 0;
+}
+
+.md-typeset .tum-services > ul > li > p:first-child > .twemoji {
+  flex-shrink: 0;
+  width: 2rem;
+  height: 2rem;
+  padding: .4rem;
+  border-radius: 50%;
+  background-color: var(--tum-info);
+  color: var(--tum-secondary);
+}
+
+.md-typeset .tum-services > ul > li > p:first-child > .twemoji svg {
+  width: 1.2rem;
+  height: 1.2rem;
+  max-height: none;
+}
+
+.md-typeset .grid.cards.tum-services > ul > li > p:first-child > strong {
+  display: inline;
+  margin: 0;
+}
+
+/* Links and contact mail, pinned to the card bottom */
+.md-typeset .tum-card-links {
+  margin-top: auto;
+  padding-top: .6rem;
+  border-top: 1px solid var(--tum-rule);
+  font-size: .7rem;
+}
+
+.md-typeset .tum-card-links a {
+  overflow-wrap: anywhere;
+}
+
+.md-typeset .tum-card-links .twemoji {
+  color: var(--tum-secondary);
+  margin-right: .15rem;
+}
+
+/* Single card spanning the full row */
+.md-typeset .grid.cards.tum-services--wide > ul {
+  grid-template-columns: 1fr;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .tum-services > ul > li > p:first-child > .twemoji {
+  background-color: rgba(48, 112, 179, .2);
+  color: #7bb1e8;
+}
