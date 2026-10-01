@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+<!--
+  TUM-style chrome:
+  1. a dark navy service bar above the header (quicklinks / services / language)
+  2. the regular Material header, restyled as the white TUM branding band
+-->
+{% block header %}
+  <div class="tum-servicebar">
+    <div class="tum-servicebar__inner md-grid">
+      <a class="tum-servicebar__home" href="{{ config.extra.tum_parent_url | d('https://www.tum.de/en/', true) }}">
+        Technical University of Munich
+      </a>
+      <nav class="tum-servicebar__nav" aria-label="Quicklinks">
+        <span class="tum-servicebar__label">Quicklinks</span>
+        {% for item in config.extra.quicklinks | d([], true) %}
+          <a href="{{ item.link }}">{{ item.name }}</a>
+        {% endfor %}
+      </nav>
+      <div class="tum-servicebar__lang">
+        <a href="#" aria-label="Deutsch">DE</a>
+        <span aria-hidden="true">|</span>
+        <a href="#" class="tum-servicebar__lang--active" aria-current="true">EN</a>
+      </div>
+    </div>
+  </div>
+  {% include "partials/header.html" %}
+{% endblock %}
+
+<!-- Disclaimer banner above everything; not dismissible on purpose -->
+{% block announce %}
+  <strong>This is a mock page for illustration and no official TUM website.</strong>
+{% endblock %}

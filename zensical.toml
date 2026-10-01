@@ -1,0 +1,119 @@
+# ---------------------------------------------------------------------------
+# Open Science @ TUM — mock site
+# Layout/style skeleton imitating https://www.ub.tum.de/en/open-access
+# ---------------------------------------------------------------------------
+
+[project]
+site_url = "https://open-science.tum.de/"
+site_name = "Open Science"
+site_description = "Central entry point for Open Science at the Technical University of Munich"
+site_author = "Technical University of Munich"
+
+copyright = "Copyright &copy; 2026 Technical University of Munich"
+
+nav = [
+  { "Variant A" = "index.md" },
+  { "Variant B" = "variant-b.md" },
+]
+
+extra_css = ["stylesheets/tum.css"]
+
+[project.theme]
+custom_dir = "overrides"
+language = "en"
+favicon = "assets/favicon.svg"
+features = [
+  "content.code.copy",
+  "content.tabs.link",
+  "content.tooltips",
+  "navigation.footer",
+  "navigation.indexes",
+  "navigation.instant",
+  "navigation.instant.prefetch",
+  "navigation.path",      # breadcrumbs, like "Home > Research & Publishing > ..."
+  "navigation.sections",  # TUM-style coloured menu blocks
+  "navigation.top",
+  "navigation.tracking",
+  "search.highlight",
+  "search.suggest",
+  "toc.follow",
+]
+
+[project.theme.font]
+text = "Roboto"
+code = "Roboto Mono"
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: light)"
+scheme = "default"
+toggle.icon = "lucide/sun"
+toggle.name = "Switch to dark mode"
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: dark)"
+scheme = "slate"
+toggle.icon = "lucide/moon"
+toggle.name = "Switch to light mode"
+
+# Shown in the dark bar above the header (see overrides/main.html)
+[project.extra]
+tum_parent_url = "https://www.tum.de/en/"
+
+[[project.extra.quicklinks]]
+name = "Get Started"
+link = "#"
+
+[[project.extra.quicklinks]]
+name = "TUM OPAC"
+link = "#"
+
+[[project.extra.quicklinks]]
+name = "Online Access"
+link = "#"
+
+[[project.extra.quicklinks]]
+name = "Course Program"
+link = "#"
+
+[[project.extra.social]]
+icon = "fontawesome/brands/instagram"
+link = "https://www.instagram.com/tumlibrary/"
+name = "TUM Library on Instagram"
+
+[[project.extra.social]]
+icon = "fontawesome/brands/linkedin"
+link = "https://de.linkedin.com/company/tum-library"
+name = "TUM Library on LinkedIn"
+
+[[project.extra.social]]
+icon = "fontawesome/brands/youtube"
+link = "https://www.youtube.com/tumlibrarychannel"
+name = "TUM Library on YouTube"
+
+[project.markdown_extensions]
+abbr = {}
+admonition = {}
+attr_list = {}
+def_list = {}
+footnotes = {}
+md_in_html = {}
+toc.permalink = true
+toc.toc_depth = 3
+pymdownx.betterem = {}
+pymdownx.caret = {}
+pymdownx.details = {}
+pymdownx.emoji.emoji_generator = "zensical.extensions.emoji.to_svg"
+pymdownx.emoji.emoji_index = "zensical.extensions.emoji.twemoji"
+pymdownx.highlight.anchor_linenums = true
+pymdownx.highlight.line_spans = "__span"
+pymdownx.highlight.pygments_lang_class = true
+pymdownx.inlinehilite = {}
+pymdownx.keys = {}
+pymdownx.magiclink = {}
+pymdownx.mark = {}
+pymdownx.smartsymbols = {}
+pymdownx.superfences = {}
+pymdownx.tabbed.alternate_style = true
+pymdownx.tabbed.combine_header_slug = true
+pymdownx.tasklist.custom_checkbox = true
+pymdownx.tilde = {}

@@ -1,0 +1,704 @@
+/* ==========================================================================
+   TUM look & feel for Zensical
+   Colour tokens taken from ub.tum.de (themes/custom/barrio_subtheme/css/tum)
+   ========================================================================== */
+
+:root {
+  --tum-primary:        #072140;  /* TUM blue dark - header, footer, menu L0 */
+  --tum-secondary:      #3070b3;  /* TUM blue       - menu L1, accents        */
+  --tum-blue-mid:       #14519a;  /* menu L2                                  */
+  --tum-blue-open:      #0e396e;  /* open accordion                           */
+  --tum-link:           #0071b3;
+  --tum-link-hover:     #018fe2;
+  --tum-link-on-dark:   #c2d7ef;
+  --tum-info:           #f0f5fa;  /* light blue info surface                  */
+  --tum-contact:        #dde2e6;  /* "Kontaktbox" grey                        */
+  --tum-rule:           #e5e5e5;
+  --tum-text:           #333333;
+  --tum-heading:        #4c4c4c;
+
+  --tum-servicebar-height: 2.2rem;
+}
+
+/* --- Material palette mapping -------------------------------------------- */
+
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color:        var(--tum-primary);
+  --md-primary-fg-color--light: var(--tum-secondary);
+  --md-primary-fg-color--dark:  var(--tum-primary);
+  --md-primary-bg-color:        #ffffff;
+  --md-accent-fg-color:         var(--tum-link-hover);
+
+  --md-typeset-a-color:         var(--tum-link);
+  --md-default-fg-color:        var(--tum-text);
+  --md-default-bg-color:        #ffffff;
+  --md-footer-bg-color:         var(--tum-primary);
+  --md-footer-bg-color--dark:   var(--tum-primary);
+}
+
+[data-md-color-scheme="slate"] {
+  --md-hue: 215;
+  --md-primary-fg-color:        var(--tum-primary);
+  --md-primary-bg-color:        #ffffff;
+  --md-accent-fg-color:         #5e94d4;
+  --md-typeset-a-color:         #7bb1e8;
+  --md-footer-bg-color:         var(--tum-primary);
+  --md-footer-bg-color--dark:   #04162b;
+}
+
+/* Slightly tighter, more "institutional" body text than the Material default */
+.md-typeset {
+  font-size: .8rem;
+  line-height: 1.6;
+}
+
+/* ==========================================================================
+   1. Service bar (dark navy strip above the header)
+   ========================================================================== */
+
+.tum-servicebar {
+  background-color: var(--tum-primary);
+  color: #fff;
+  font-size: .65rem;
+  line-height: 1.2;
+}
+
+.tum-servicebar__inner {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  height: var(--tum-servicebar-height);
+  padding: 0 .8rem;
+}
+
+.tum-servicebar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.tum-servicebar a:hover,
+.tum-servicebar a:focus {
+  color: var(--tum-link-on-dark);
+}
+
+.tum-servicebar__home {
+  font-weight: 700;
+  letter-spacing: .02em;
+}
+
+.tum-servicebar__nav {
+  display: flex;
+  align-items: center;
+  gap: .9rem;
+  margin-left: auto;
+}
+
+.tum-servicebar__label {
+  color: var(--tum-link-on-dark);
+  font-weight: 700;
+}
+
+.tum-servicebar__lang {
+  display: flex;
+  align-items: center;
+  gap: .35rem;
+  padding-left: .9rem;
+  border-left: 1px solid rgba(255, 255, 255, .25);
+}
+
+.tum-servicebar__lang--active {
+  font-weight: 700;
+  text-decoration: underline !important;
+}
+
+@media screen and (max-width: 76.234375em) {
+  .tum-servicebar__nav { display: none; }
+}
+
+/* ==========================================================================
+   2. Header (white TUM branding band)
+   ========================================================================== */
+
+.md-header {
+  background-color: #fff;
+  color: var(--tum-primary);
+  border-bottom: 1px solid var(--tum-rule);
+  box-shadow: none;
+}
+
+.md-header[data-md-state="shadow"],
+.md-header--shadow {
+  box-shadow: 0 0 .2rem rgba(0, 0, 0, .1);
+}
+
+[data-md-color-scheme="slate"] .md-header {
+  background-color: var(--tum-primary);
+  color: #fff;
+  border-bottom-color: rgba(255, 255, 255, .15);
+}
+
+.md-header__inner {
+  padding: .35rem .4rem;
+}
+
+/* Plain-text "TUM" in place of the official logo (this is a mock) */
+.tum-wordmark {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: .04em;
+  color: inherit;
+}
+
+/* Mock disclaimer banner (announce block) */
+.md-banner {
+  background-color: #e37222;  /* TUM orange */
+  color: #fff;
+  text-align: center;
+}
+
+.md-header__title {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-left: .6rem;
+}
+
+.tum-header__subtitle {
+  display: block;
+  font-size: .6rem;
+  font-weight: 400;
+  opacity: .75;
+  margin-top: .1rem;
+}
+
+/* Only show the site name, not the page topic, in the branding band */
+.md-header__topic[data-md-component="header-topic"] { display: none; }
+
+.md-search__form {
+  background-color: rgba(7, 33, 64, .06);
+  border: 1px solid var(--tum-rule);
+  border-radius: 0;
+}
+
+.md-search__input::placeholder { color: rgba(7, 33, 64, .55); }
+.md-search__input { color: var(--tum-primary); }
+
+[data-md-color-scheme="slate"] .md-search__form {
+  background-color: rgba(255, 255, 255, .12);
+  border-color: rgba(255, 255, 255, .2);
+}
+[data-md-color-scheme="slate"] .md-search__input { color: #fff; }
+[data-md-color-scheme="slate"] .md-search__input::placeholder { color: rgba(255, 255, 255, .7); }
+
+/* ==========================================================================
+   3. Primary navigation - the TUM coloured menu blocks
+   ========================================================================== */
+
+@media screen and (min-width: 76.25em) {
+
+  /* Menu starts flush with the content, no rounded pills, no gaps */
+  .md-sidebar--primary {
+    padding: 0;
+  }
+
+  .md-sidebar--primary .md-sidebar__scrollwrap {
+    margin: 0;
+  }
+
+  .md-nav--primary {
+    margin: 0;
+    background-color: var(--tum-primary);
+  }
+
+  .md-nav--primary .md-nav__list,
+  .md-nav--primary .md-nav__list .md-nav__list {
+    gap: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  .md-nav--primary .md-nav__item {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Every entry is a full-width block, like the TUM main menu */
+  .md-nav--primary .md-nav__link {
+    display: block;
+    margin: 0;
+    padding: .4rem .7rem;
+    font-size: .68rem;
+    line-height: 1.25;
+    color: #fff;
+    border-top: 1px solid rgba(255, 255, 255, .12);
+    border-radius: 0;
+    transition: background-color .15s ease-in, color .15s ease-in;
+  }
+
+  .md-nav--primary .md-nav__link:hover,
+  .md-nav--primary .md-nav__link:focus {
+    color: var(--tum-link-on-dark);
+    background-color: rgba(255, 255, 255, .08);
+  }
+
+  /* Level 0 - navy; section labels in bold */
+  .md-nav--primary > .md-nav__list > .md-nav__item > .md-nav__link {
+    background-color: var(--tum-primary);
+  }
+
+  .md-nav--primary .md-nav__item--section > .md-nav__link {
+    font-weight: 700;
+    letter-spacing: .01em;
+  }
+
+  /* Level 1 - TUM blue */
+  .md-nav--primary .md-nav:not(.md-nav--secondary) .md-nav__link {
+    background-color: var(--tum-secondary);
+    padding-left: 1.1rem;
+  }
+
+  /* Level 2 - darker blue */
+  .md-nav--primary .md-nav:not(.md-nav--secondary) .md-nav:not(.md-nav--secondary) .md-nav__link {
+    background-color: var(--tum-blue-mid);
+    padding-left: 1.5rem;
+  }
+
+  /* Active trail: white marker on the left, as on ub.tum.de */
+  .md-nav--primary .md-nav__link--active,
+  .md-nav--primary .md-nav__item--active > .md-nav__link[href] {
+    font-weight: 700;
+    color: #fff;
+    background-color: var(--tum-blue-open);
+    border-left: 3px solid #fff;
+    padding-left: calc(1.1rem - 3px);
+  }
+
+  .md-nav--primary > .md-nav__list > .md-nav__item--active > .md-nav__link[href] {
+    padding-left: calc(.7rem - 3px);
+  }
+
+  /* Section index pages (navigation.indexes) render a wrapper div plus an
+     empty toggle label - flatten it so the block stays one clean row */
+  .md-nav--primary .md-nav__container {
+    display: block;
+    padding: 0;
+    border-top: 0;
+    background: none;
+  }
+
+  .md-nav--primary .md-nav__container > label.md-nav__link { display: none; }
+
+  .md-nav--primary .md-nav__item--section > .md-nav__container > a.md-nav__link {
+    font-weight: 700;
+    background-color: var(--tum-primary);
+  }
+
+  .md-nav--primary .md-nav__icon { display: none; }
+
+  /* Content keeps its distance from the coloured menu */
+  [dir=ltr] .md-sidebar--primary:not([hidden]) ~ .md-content > .md-content__inner {
+    margin-left: 1.6rem;
+  }
+}
+
+/* ==========================================================================
+   4. Breadcrumbs
+   ========================================================================== */
+
+.md-path {
+  margin: 0 0 .4rem;
+  padding: .35rem 0;
+  font-size: .62rem;
+  border-bottom: 1px solid var(--tum-rule);
+}
+
+.md-path__link { color: var(--tum-link); }
+.md-path__link:hover { color: var(--tum-link-hover); }
+
+/* ==========================================================================
+   5. Typography inside the content area
+   ========================================================================== */
+
+.md-content__inner {
+  margin-bottom: 2.4rem;
+}
+
+.md-typeset h1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--tum-heading);
+  margin: 0 0 .8rem;
+}
+
+.md-typeset h2 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--tum-heading);
+  margin: 1.8rem 0 .6rem;
+  padding-bottom: .25rem;
+  border-bottom: 2px solid var(--tum-secondary);
+}
+
+.md-typeset h3 {
+  font-size: .95rem;
+  font-weight: 700;
+  color: var(--tum-heading);
+  margin: 1.2rem 0 .4rem;
+}
+
+.md-typeset h4 {
+  font-size: .8rem;
+  font-weight: 700;
+  color: var(--tum-heading);
+}
+
+[data-md-color-scheme="slate"] .md-typeset :is(h1, h2, h3, h4) {
+  color: var(--md-default-fg-color);
+}
+
+/* Lead paragraph directly below the page title */
+.md-typeset .lead,
+.md-typeset h1 + p {
+  font-size: .88rem;
+  line-height: 1.55;
+  color: var(--tum-text);
+}
+
+[data-md-color-scheme="slate"] .md-typeset h1 + p { color: var(--md-default-fg-color); }
+
+/* TUM links are underlined in body copy */
+.md-typeset a {
+  text-decoration: none;
+  border-bottom: 1px solid currentcolor;
+}
+
+.md-typeset a:hover,
+.md-typeset a:focus {
+  color: var(--tum-link-hover);
+}
+
+.md-typeset .md-button,
+.md-typeset .headerlink,
+.md-typeset .md-nav a,
+.md-typeset .grid.cards > ul > li > a:last-child {
+  border-bottom: 0;
+}
+
+/* ==========================================================================
+   6. Content components (teasers, boxes, buttons)
+   ========================================================================== */
+
+/* Teaser cards, as in "Publishing Agreements / Publication Fund / ..." */
+.md-typeset .grid.cards > :is(ul, ol) > li,
+.md-typeset .grid > .card {
+  border: 1px solid var(--tum-rule);
+  border-top: 4px solid var(--tum-secondary);
+  border-radius: 0;
+  box-shadow: none;
+  padding: .9rem 1rem;
+  transition: box-shadow .15s ease, border-color .15s ease;
+}
+
+.md-typeset .grid.cards > :is(ul, ol) > li:hover {
+  border-color: var(--tum-secondary);
+  box-shadow: 0 .15rem .5rem rgba(7, 33, 64, .12);
+}
+
+.md-typeset .grid.cards > :is(ul, ol) > li > p:first-child > strong {
+  display: block;
+  font-size: .85rem;
+  color: var(--tum-heading);
+  margin-bottom: .3rem;
+}
+
+/* Arrow link, imitating the "About Publishing Agreements >" teaser links */
+.md-typeset a.tum-more {
+  display: inline-block;
+  margin-top: .4rem;
+  font-weight: 700;
+  color: var(--tum-link);
+  border-bottom: 0;
+}
+
+.md-typeset a.tum-more::after {
+  content: " ›";
+  font-weight: 700;
+}
+
+/* Buttons */
+.md-typeset .md-button {
+  border-radius: 0;
+  border: 2px solid var(--tum-secondary);
+  color: var(--tum-secondary);
+  font-weight: 700;
+  padding: .4rem .9rem;
+}
+
+.md-typeset .md-button--primary {
+  background-color: var(--tum-secondary);
+  border-color: var(--tum-secondary);
+  color: #fff;
+}
+
+.md-typeset .md-button:hover,
+.md-typeset .md-button:focus {
+  background-color: var(--tum-primary);
+  border-color: var(--tum-primary);
+  color: #fff;
+}
+
+/* TUM box variants, mapped onto admonitions:
+   note  -> light blue info box
+   info  -> blue-bordered "Stoerer" box
+   tip   -> grey contact box
+   danger-> solid navy "important" box                                        */
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: 0;
+  border: 0;
+  box-shadow: none;
+  font-size: .72rem;
+}
+
+.md-typeset .admonition > .admonition-title,
+.md-typeset details > summary {
+  border-radius: 0;
+  font-size: .8rem;
+}
+
+.md-typeset .admonition.note {
+  background-color: var(--tum-info);
+  border-left: 4px solid var(--tum-secondary);
+}
+
+.md-typeset .admonition.info {
+  border: 8px solid var(--tum-secondary);
+  background-color: transparent;
+}
+
+.md-typeset .admonition.tip {
+  background-color: transparent;
+  outline: 5px solid var(--tum-contact);
+  margin: 2rem 0;
+}
+
+.md-typeset .admonition.tip > .admonition-title {
+  background-color: var(--tum-contact);
+  color: var(--tum-heading);
+}
+
+.md-typeset .admonition.danger {
+  background-color: var(--tum-primary);
+  color: #fff;
+}
+
+.md-typeset .admonition.danger > .admonition-title,
+.md-typeset .admonition.danger a {
+  color: #fff;
+}
+
+.md-typeset .admonition.danger a:hover { color: var(--tum-link-on-dark); }
+
+/* Neutral, TUM-coloured admonition icons instead of the semantic defaults */
+.md-typeset :is(.admonition, details).note > :is(.admonition-title, summary)::before,
+.md-typeset :is(.admonition, details).info > :is(.admonition-title, summary)::before {
+  background-color: var(--tum-secondary);
+}
+
+.md-typeset :is(.admonition, details).tip > :is(.admonition-title, summary)::before {
+  background-color: var(--tum-heading);
+}
+
+.md-typeset :is(.admonition, details).danger > :is(.admonition-title, summary)::before {
+  background-color: #fff;
+}
+
+.md-typeset :is(.admonition, details).note > :is(.admonition-title, summary),
+.md-typeset :is(.admonition, details).info > :is(.admonition-title, summary) {
+  background-color: transparent;
+  color: var(--tum-heading);
+}
+
+[data-md-color-scheme="slate"] .md-typeset :is(.admonition, details).note > :is(.admonition-title, summary),
+[data-md-color-scheme="slate"] .md-typeset :is(.admonition, details).info > :is(.admonition-title, summary) {
+  color: var(--md-default-fg-color);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .admonition.note,
+[data-md-color-scheme="slate"] .md-typeset details.note {
+  background-color: rgba(48, 112, 179, .15);
+}
+
+/* Tables */
+.md-typeset table:not([class]) {
+  border: 1px solid var(--tum-rule);
+  border-radius: 0;
+  box-shadow: none;
+  font-size: .7rem;
+}
+
+.md-typeset table:not([class]) th {
+  background-color: var(--tum-primary);
+  color: #fff;
+  font-weight: 700;
+}
+
+/* Table of contents */
+.md-nav--secondary .md-nav__title {
+  font-size: .62rem;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  color: var(--tum-heading);
+  box-shadow: none;
+}
+
+.md-nav--secondary .md-nav__link--active { color: var(--tum-secondary); }
+
+/* ==========================================================================
+   7. Footer
+   ========================================================================== */
+
+.md-footer {
+  background-color: var(--tum-primary);
+}
+
+.md-footer__inner {
+  padding: .4rem .4rem;
+  border-bottom: 1px solid rgba(255, 255, 255, .15);
+}
+
+.md-footer__link {
+  padding-top: .6rem;
+  padding-bottom: .6rem;
+  opacity: 1;
+}
+
+.md-footer__link,
+.md-footer__title,
+.md-footer__direction,
+.md-footer__button {
+  color: #fff;
+}
+
+.md-footer__link:hover,
+.md-footer__link:focus {
+  color: var(--tum-link-on-dark);
+}
+
+.md-footer__title {
+  font-size: .8rem;
+}
+
+.tum-footer {
+  background-color: var(--tum-primary);
+  color: #fff;
+  font-size: .65rem;
+}
+
+.tum-footer__inner {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  padding: .9rem .8rem;
+}
+
+.tum-footer__nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+}
+
+.tum-footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.tum-footer a:hover,
+.tum-footer a:focus { color: var(--tum-link-on-dark); }
+
+.tum-footer__social {
+  display: flex;
+  gap: .8rem;
+  margin-left: auto;
+}
+
+.tum-footer__social svg {
+  width: 1rem;
+  height: 1rem;
+  fill: currentcolor;
+  vertical-align: middle;
+}
+
+.md-footer-meta {
+  background-color: rgba(0, 0, 0, .25);
+  font-size: .6rem;
+}
+
+.md-footer-meta.md-typeset,
+.md-footer-meta .md-copyright,
+.md-footer-meta .md-copyright__highlight {
+  color: rgba(255, 255, 255, .8);
+}
+
+.md-footer-meta.md-typeset a {
+  color: #fff;
+  border-bottom: 0;
+  text-decoration: underline;
+}
+
+.md-footer-meta.md-typeset a:hover,
+.md-footer-meta.md-typeset a:focus {
+  color: var(--tum-link-on-dark);
+}
+
+/* --- Mobile drawer ------------------------------------------------------- */
+
+@media screen and (max-width: 76.234375em) {
+  .md-nav--primary,
+  .md-nav--primary .md-nav {
+    background-color: var(--tum-primary);
+    color: #fff;
+  }
+
+  .md-nav--primary .md-nav__title[for="__drawer"] {
+    background-color: var(--tum-primary);
+    color: #fff;
+    border-bottom-color: rgba(255, 255, 255, .2);
+  }
+
+  .md-nav--primary .md-nav__link { color: #fff; }
+  .md-nav--primary .md-nav__link:hover,
+  .md-nav--primary .md-nav__link:focus { color: var(--tum-link-on-dark); }
+}
+
+/* --- Dark scheme corrections --------------------------------------------- */
+
+[data-md-color-scheme="slate"] .md-typeset .grid.cards > :is(ul, ol) > li > p:first-child > strong {
+  color: var(--md-default-fg-color);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .md-button {
+  color: #7bb1e8;
+  border-color: #7bb1e8;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .md-button--primary {
+  background-color: var(--tum-secondary);
+  border-color: var(--tum-secondary);
+  color: #fff;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .md-button:hover,
+[data-md-color-scheme="slate"] .md-typeset .md-button:focus {
+  background-color: #7bb1e8;
+  border-color: #7bb1e8;
+  color: var(--tum-primary);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .admonition.tip > .admonition-title {
+  color: var(--tum-primary);
+}

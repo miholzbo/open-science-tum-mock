@@ -1,0 +1,4 @@
+site/
+.zensical/
+.cache/
+.DS_Store
