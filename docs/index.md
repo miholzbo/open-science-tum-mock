@@ -30,7 +30,7 @@ Following the principles of Open Science strengthens research quality, trust in 
 
 ## Related Policies and Regulations
 
-- [Open Access Policy](https://www.ub.tum.de/open-access)
+- [TUM Open Access Policy](https://www.ub.tum.de/open-access)
 - [Berlin Declaration](https://openaccess.mpg.de/Berliner-Erklaerung), signed by TUM
 - [Declaration of Research Assessment (DORA)](https://www.ub.tum.de/en/dora)
 - [DFG Positioning on Open Science](https://zenodo.org/records/7194537)
