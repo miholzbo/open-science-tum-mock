@@ -1,7 +1,6 @@
 # Open Science at TUM
 
-The TUM supports following Open Science principles for making research openly accessible, verifiable and reusable — from
-literature and data to software and methods.
+Open Science aims to make the research process and its outputs — publications, data, software and methods — openly accessible, transparent and reusable. The TUM Open Science Policy encourages all members of TUM to apply these principles in research, teaching and science communication, unless legal, ethical, security-related or contractual obligations prevent this. TUM supports them in following these principles with training, guidance and infrastructure throughout the research lifecycle.
 
 ## TUM Open Science Strategy
 
