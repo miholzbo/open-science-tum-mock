@@ -4,12 +4,11 @@
 # ---------------------------------------------------------------------------
 
 [project]
-site_url = "https://open-science.tum.de/"
+site_url = "https://miholzbo.github.io/open-science-tum-mock/"
 site_name = "Open Science"
-site_description = "Central entry point for Open Science at the Technical University of Munich"
-site_author = "Technical University of Munich"
+site_description = "Mock of a central entry point for Open Science at TUM (not an official TUM website)"
 
-copyright = "Copyright &copy; 2026 Technical University of Munich"
+copyright = "Mock page for illustration &middot; not an official TUM website"
 
 nav = [
   { "Variant A" = "index.md" },
@@ -57,38 +56,21 @@ toggle.name = "Switch to light mode"
 
 # Shown in the dark bar above the header (see overrides/main.html)
 [project.extra]
-tum_parent_url = "https://www.tum.de/en/"
-
 [[project.extra.quicklinks]]
-name = "Get Started"
+name = "Quicklink 1"
 link = "#"
 
 [[project.extra.quicklinks]]
-name = "TUM OPAC"
+name = "Quicklink 2"
 link = "#"
 
 [[project.extra.quicklinks]]
-name = "Online Access"
+name = "Quicklink 3"
 link = "#"
 
 [[project.extra.quicklinks]]
-name = "Course Program"
+name = "Quicklink 4"
 link = "#"
-
-[[project.extra.social]]
-icon = "fontawesome/brands/instagram"
-link = "https://www.instagram.com/tumlibrary/"
-name = "TUM Library on Instagram"
-
-[[project.extra.social]]
-icon = "fontawesome/brands/linkedin"
-link = "https://de.linkedin.com/company/tum-library"
-name = "TUM Library on LinkedIn"
-
-[[project.extra.social]]
-icon = "fontawesome/brands/youtube"
-link = "https://www.youtube.com/tumlibrarychannel"
-name = "TUM Library on YouTube"
 
 [project.markdown_extensions]
 abbr = {}

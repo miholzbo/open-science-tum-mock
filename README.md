@@ -27,11 +27,11 @@ zensical build           # output to site/
 
 | Path | Purpose |
 | --- | --- |
-| `zensical.toml` | site config: navigation, theme features, TUM quicklinks, social links |
+| `zensical.toml` | site config: navigation, theme features, placeholder quicklinks |
 | `overrides/main.html` | mock disclaimer banner + dark navy TUM service bar above the header |
 | `overrides/partials/header.html` | white TUM branding band (logo, site name, subtitle, search) |
 | `overrides/partials/logo.html` | plain-text "TUM" used instead of a logo |
-| `overrides/partials/footer.html` | navy TUM service footer (link row + social icons) |
+| `overrides/partials/footer.html` | navy TUM service footer (dummy link row) |
 | `docs/stylesheets/tum.css` | all TUM styling, in numbered sections |
 
 ## Colour tokens
