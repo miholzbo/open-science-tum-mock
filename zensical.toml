@@ -12,7 +12,10 @@ copyright = "Mock page for illustration &middot; not an official TUM website"
 
 nav = [
   { "Variant A" = "index.md" },
-  { "Variant B" = "variant-b.md" },
+  { "Variant B" = [
+    "variant-b/index.md",
+    { "Backup" = "variant-b/backup.md" },
+  ] },
 ]
 
 extra_css = ["stylesheets/tum.css"]

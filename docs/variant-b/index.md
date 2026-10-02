@@ -28,51 +28,15 @@ Following the principles of Open Science strengthens research quality, trust in 
 
 <!-- Layout variant B: everything below this line differs between the variants -->
 
-## Central Aspects of Open Science
+## Related Policies and Regulations
 
-<div class="grid cards" markdown>
-
--   **Open Access**
-
-    ---
-
-    Unrestricted access to scientific literature — reading it and publishing it.
-
-    [About Open Access](#){ .tum-more }
-
--   **Open Data**
-
-    ---
-
-    Planning, documenting, storing and publishing research data along the FAIR principles.
-
-    [About Research Data Management](#){ .tum-more }
-
--   **Open Source**
-
-    ---
-
-    Publishing research software under an open licence, with a citable release.
-
-    [About Open Source & Software](#){ .tum-more }
-
--   **Open Methodology**
-
-    ---
-
-    Making results verifiable: environments, workflows, protocols and preregistration.
-
-    [About Reproducibility](#){ .tum-more }
-
-</div>
-
-## Where to start
-
-Placeholder paragraph describing the typical entry points for researchers, doctoral candidates
-and support staff.
-
-[Infrastructure at TUM](#){ .md-button .md-button--primary }
-[Support & Contact](#){ .md-button }
+- [TUM Open Access Policy](https://www.ub.tum.de/open-access)
+- [Berlin Declaration](https://openaccess.mpg.de/Berliner-Erklaerung), signed by TUM
+- [Declaration of Research Assessment (DORA)](https://www.ub.tum.de/en/dora)
+- [DFG Positioning on Open Science](https://zenodo.org/records/7194537)
+- [TUM Guidelines on Handling Research Data](https://web.tum.de/en/researchdata/tum-guidelines/)
+- [TUM AI Strategy](https://mediatum.ub.tum.de/1766631)
+- TUM Data Strategy (link to follow)
 
 !!! tip "Support"
 
