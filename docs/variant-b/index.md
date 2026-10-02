@@ -38,6 +38,152 @@ Following the principles of Open Science strengthens research quality, trust in 
 - [TUM AI Strategy](https://mediatum.ub.tum.de/1766631)
 - TUM Data Strategy (link to follow)
 
+## Open Science Services at TUM
+
+<div class="grid cards tum-aspects" markdown>
+
+-   :lucide-lock-open: **Open Access**
+
+    Unrestricted access to scientific literature — reading it and publishing it.
+    { .tum-aspect-lead }
+
+    -   :lucide-newspaper: **Publishing articles**
+
+        The Open Access team of the University Library assists you with various possibilities for publishing open-access articles.
+
+        :lucide-arrow-right: [Open Access Services](https://www.ub.tum.de/open-access)<br>
+        :lucide-mail: [open-access@ub.tum.de](mailto:open-access@ub.tum.de)
+        { .tum-card-links }
+
+    -   :lucide-book-open: **Publishing books**
+
+        You can publish books in both print and online formats with TUM’s open-access publisher TUM.University Press.
+
+        :lucide-arrow-right: [TUM.University Press](https://www.ub.tum.de/tumuniversitypress)<br>
+        :lucide-mail: [tumuniversitypress@tum.de](mailto:tumuniversitypress@tum.de)
+        { .tum-card-links }
+
+    -   :lucide-library: **Choosing journals**
+
+        The university library offers practical tips for journal selection, funding options, and avoiding predatory journals.
+
+        :lucide-arrow-right: [Open Access Services](https://www.ub.tum.de/open-access)<br>
+        :lucide-mail: [open-access@ub.tum.de](mailto:open-access@ub.tum.de)
+        { .tum-card-links }
+
+
+-   :lucide-database: **Open Data**
+
+    Planning, documenting, storing and publishing research data along the FAIR principles.
+    { .tum-aspect-lead }
+
+    -   :lucide-archive: **Publishing research data**
+
+        We recommend publishing research data in a data repository, e.g., in the institutional repository [mediaTUM](https://mediatum.ub.tum.de/?change_language=en) or other suitable discipline-specific or interdisciplinary repositories, which you can find via the registry [re3data.org](https://www.re3data.org/).
+
+        :lucide-arrow-right: [TUM Research Data Hub](https://web.tum.de/en/researchdata/support-information/publish-share-data/)<br>
+        :lucide-mail: [researchdata@tum.de](mailto:researchdata@tum.de)
+        { .tum-card-links }
+
+    -   :lucide-tags: **Metadata standards**
+
+        Use generic or discipline-specific metadata to describe your data.
+
+        :lucide-arrow-right: [TUM Data Knowledge Hub](https://tum-research-data-hub.github.io/knowledge-hub/general-knowledge/metadata)<br>
+        :lucide-mail: [researchdata@tum.de](mailto:researchdata@tum.de)
+        { .tum-card-links }
+
+    -   :lucide-file-type: **Data formats**
+
+        Where possible, use open, widely used, and simple data formats to enhance accessibility.
+
+        :lucide-arrow-right: [TUM Research Data Hub](https://web.tum.de/en/researchdata/support-information/archive-data/)<br>
+        :lucide-mail: [researchdata@tum.de](mailto:researchdata@tum.de)
+        { .tum-card-links }
+
+    -   :lucide-notebook-pen: **Documentation tools**
+
+        TUM offers the open source tools [TUM eLabFTW](https://www.ub.tum.de/en/elabftw) and [TUM DataTagger](https://www.ub.tum.de/en/datatagger) for documenting research processes and research data.
+
+        :lucide-arrow-right: [TUM Research Data Hub](https://web.tum.de/en/researchdata/infrastructure/tools-storage-solutions/)<br>
+        :lucide-mail: [researchdata@tum.de](mailto:researchdata@tum.de)
+        { .tum-card-links }
+
+
+-   :lucide-code-2: **Open Source**
+
+    Reusable and citable research software through open licences and versioned releases.
+    { .tum-aspect-lead }
+
+    -   :lucide-git-branch: **Publishing research software**
+
+        Research software can be published in dedicated software repositories, like [GitHub](https://github.com/) or [GitLab](https://gitlab.lrz.de/).
+
+        :lucide-arrow-right: [TUM Research Data Hub](https://web.tum.de/en/researchdata/support-information/publish-share-data/)<br>
+        :lucide-mail: [researchdata@tum.de](mailto:researchdata@tum.de)
+        { .tum-card-links }
+
+    -   :lucide-scale: **Choosing licences**
+
+        This [guidance](https://mediatum.ub.tum.de/1711141) and courses on research data management offer help selecting suitable licenses.
+
+        :lucide-arrow-right: [TUM Research Data Hub](https://web.tum.de/en/researchdata/support-information/publish-share-data/)
+        { .tum-card-links }
+
+    -   :lucide-package: **Software versioning and packaging**
+
+        The TUM Research Data Hub offers tutorials on versioning and packaging research software.
+
+        :lucide-arrow-right: [TUM Research Data Hub training](https://web.tum.de/en/researchdata/training/)<br>
+        :lucide-mail: [researchdata@tum.de](mailto:researchdata@tum.de)
+        { .tum-card-links }
+
+
+-   :lucide-flask-conical: **Open Methodology**
+
+    Making results verifiable: environments, workflows, protocols and preregistration.
+    { .tum-aspect-lead }
+
+    -   :lucide-notebook-pen: **Documenting methods and protocols**
+
+        TUM supports documentation tools such as the electronic lab notebook [TUM eLabFTW](https://www.ub.tum.de/en/elabftw) for recording methods, protocols and research processes.
+
+        :lucide-arrow-right: [TUM Research Data Hub](https://web.tum.de/en/researchdata/infrastructure/tools-storage-solutions/)<br>
+        :lucide-mail: [researchdata@tum.de](mailto:researchdata@tum.de)
+        { .tum-card-links }
+
+    -   :lucide-workflow: **Workflow management**
+
+        Make your analyses reproducible by anyone with tools that record each processing step and its software dependencies.
+
+        :lucide-arrow-right: [TUM Research Data Hub training](https://web.tum.de/en/researchdata/training/)<br>
+        :lucide-mail: [researchdata@tum.de](mailto:researchdata@tum.de)
+        { .tum-card-links }
+
+    -   :lucide-clipboard-check: **Preregistration**
+
+        Preregistrations will be supported by the institutional repository mediaTUM (to be implemented).
+
+        :lucide-arrow-right: [mediaTUM](https://mediatum.ub.tum.de/?change_language=en)<br>
+        :lucide-mail: [mediatum@ub.tum.de](mailto:mediatum@ub.tum.de)
+        { .tum-card-links }
+
+
+-   :lucide-graduation-cap: **Open Educational Resources**
+
+    Making educational materials openly available for accessible teaching and reuse across disciplines and institutions.
+    { .tum-aspect-lead }
+
+    -   :lucide-presentation: **Publishing educational materials**
+
+        For the time being, the institutional repository mediaTUM accepts educational materials in any format, including multimedia content.
+
+        :lucide-arrow-right: [mediaTUM](https://mediatum.ub.tum.de/?change_language=en)<br>
+        :lucide-mail: [mediatum@ub.tum.de](mailto:mediatum@ub.tum.de)
+        { .tum-card-links }
+
+</div>
+
 !!! tip "Support"
 
     If you have any questions about Open Science at TUM, please feel free to contact us:

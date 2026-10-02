@@ -759,7 +759,7 @@
 }
 
 /* Single card spanning the full row */
-.md-typeset .grid.cards.tum-services--wide > ul {
+.md-typeset .grid.cards.tum-services--wide {
   grid-template-columns: 1fr;
 }
 
@@ -821,4 +821,124 @@
 
 [data-md-color-scheme="slate"] .md-typeset .tum-services--wide > ul > li > ul strong {
   color: var(--md-default-fg-color);
+}
+
+/* ==========================================================================
+   Aspect cards (Variant B): one full-width card per Open Science aspect,
+   listing the matching services inside
+   ========================================================================== */
+
+.md-typeset .grid.cards.tum-aspects {
+  grid-template-columns: 1fr;
+}
+
+.md-typeset .grid.cards.tum-aspects > ul > li {
+  padding: 1.2rem 1.4rem 1.4rem;
+}
+
+/* Header: large icon + aspect name */
+.md-typeset .tum-aspects > ul > li > p:first-child {
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+  margin: 0;
+}
+
+.md-typeset .tum-aspects > ul > li > p:first-child > .twemoji {
+  flex-shrink: 0;
+  width: 2.8rem;
+  height: 2.8rem;
+  padding: .6rem;
+  border-radius: 50%;
+  background-color: var(--tum-secondary);
+  color: #fff;
+}
+
+.md-typeset .tum-aspects > ul > li > p:first-child > .twemoji svg {
+  width: 1.6rem;
+  height: 1.6rem;
+  max-height: none;
+}
+
+.md-typeset .grid.cards.tum-aspects > ul > li > p:first-child > strong {
+  display: inline;
+  margin: 0;
+  font-size: 1.2rem;
+  color: var(--tum-primary);
+}
+
+/* Short description under the header, aligned with the aspect name */
+.md-typeset .tum-aspect-lead {
+  margin: .2rem 0 1rem 3.6rem;
+  color: var(--tum-heading);
+}
+
+/* Services inside the aspect card */
+.md-typeset .tum-aspects > ul > li > ul {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: .8rem;
+  margin: 0;
+  padding: 1rem 0 0;
+  border-top: 1px solid var(--tum-rule);
+  list-style: none;
+}
+
+.md-typeset .tum-aspects > ul > li > ul > li {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: .8rem;
+  background-color: var(--tum-info);
+  border-left: 3px solid var(--tum-secondary);
+}
+
+.md-typeset .tum-aspects > ul > li > ul > li > p {
+  margin: 0 0 .5rem;
+}
+
+.md-typeset .tum-aspects > ul > li > ul > li > p:first-child {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.md-typeset .tum-aspects > ul > li > ul > li > p:first-child > .twemoji {
+  flex-shrink: 0;
+  width: 1.7rem;
+  height: 1.7rem;
+  padding: .35rem;
+  border-radius: 50%;
+  background-color: #fff;
+  color: var(--tum-secondary);
+}
+
+.md-typeset .tum-aspects > ul > li > ul > li > p:first-child > .twemoji svg {
+  width: 1rem;
+  height: 1rem;
+  max-height: none;
+}
+
+.md-typeset .tum-aspects > ul > li > ul > li > p:first-child > strong {
+  color: var(--tum-heading);
+}
+
+.md-typeset .tum-aspects .tum-card-links {
+  margin: auto 0 0;
+  border-top-color: rgba(48, 112, 179, .2);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .grid.cards.tum-aspects > ul > li > p:first-child > strong,
+[data-md-color-scheme="slate"] .md-typeset .tum-aspects > ul > li > ul > li > p:first-child > strong,
+[data-md-color-scheme="slate"] .md-typeset .tum-aspect-lead {
+  color: var(--md-default-fg-color);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .tum-aspects > ul > li > ul > li {
+  background-color: rgba(48, 112, 179, .15);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .tum-aspects > ul > li > ul > li > p:first-child > .twemoji {
+  background-color: rgba(255, 255, 255, .08);
+  color: #7bb1e8;
 }
