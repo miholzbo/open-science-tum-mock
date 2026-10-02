@@ -4,7 +4,7 @@ Open Science aims to make the research process and its outputs — publications,
 
 ## TUM Open Science Strategy
 
-Following the principles of Open Science strengthens research quality, trust in scientific findings and the reuse of knowledge. Therefore, the TUM Open Science Policy recommends adopting these principles, focusing in particular on open publications, research data, software, methodology and educational resources.
+Following the principles of Open Science strengthens research quality, trust in scientific findings and the reuse of knowledge. Therefore, the **TUM Open Science Policy** recommends adopting these principles, focusing in particular on open publications, research data, software, methodology and educational resources.
 
 ??? info "TUM Open Science Policy"
 
