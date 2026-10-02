@@ -90,7 +90,11 @@ Following the principles of Open Science strengthens research quality, trust in 
 
 <div class="grid cards tum-services tum-services--wide" markdown>
 
--   :lucide-notebook-pen: **…research processes, research data, software, hardware and workflows?**
+-   - :lucide-microscope: **…research processes?**
+    - :lucide-database: **…research data?**
+    - :lucide-code-2: **…software?**
+    - :lucide-cpu: **…hardware?**
+    - :lucide-workflow: **…workflows?**
 
     The TUM Research Data Hub offers guidance and infrastructure solutions for documenting research methods and outputs in a standardized and efficient way.
 

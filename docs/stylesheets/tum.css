@@ -767,3 +767,58 @@
   background-color: rgba(48, 112, 179, .2);
   color: #7bb1e8;
 }
+
+/* Sub-items inside a card ("How to document …"): one small tile per item */
+.md-typeset .tum-services--wide > ul > li > ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(5.5rem, 1fr));
+  gap: .6rem;
+  margin: 0 0 .4rem;
+  padding: 0;
+  list-style: none;
+}
+
+.md-typeset .tum-services--wide > ul > li > ul > li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .4rem;
+  margin: 0;
+  padding: .7rem .4rem;
+  background-color: var(--tum-info);
+  border-left: 3px solid var(--tum-secondary);
+  text-align: center;
+  line-height: 1.3;
+}
+
+.md-typeset .tum-services--wide > ul > li > ul > li .twemoji {
+  width: 2rem;
+  height: 2rem;
+  padding: .4rem;
+  border-radius: 50%;
+  background-color: #fff;
+  color: var(--tum-secondary);
+}
+
+.md-typeset .tum-services--wide > ul > li > ul > li .twemoji svg {
+  width: 1.2rem;
+  height: 1.2rem;
+  max-height: none;
+}
+
+.md-typeset .tum-services--wide > ul > li > ul strong {
+  color: var(--tum-heading);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .tum-services--wide > ul > li > ul > li {
+  background-color: rgba(48, 112, 179, .15);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .tum-services--wide > ul > li > ul > li .twemoji {
+  background-color: rgba(255, 255, 255, .08);
+  color: #7bb1e8;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .tum-services--wide > ul > li > ul strong {
+  color: var(--md-default-fg-color);
+}
